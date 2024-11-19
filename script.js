@@ -33,7 +33,7 @@ document.getElementById("submitTweet").addEventListener("click", async () => {
 
     // Submit tweet if content is not empty
     try {
-        const response = await fetch("http://localhost:3000/submit-tweet", {
+        const response = await fetch("https://tweet-ai-quvl.onrender.com/submit-tweet", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ tweet: tweetContent, userId }),
@@ -55,7 +55,7 @@ document.getElementById("submitTweet").addEventListener("click", async () => {
 // Load all requests for admin and non-admin users
 async function loadRequests() {
     try {
-        const response = await fetch("http://localhost:3000/admin/requests");
+        const response = await fetch("https://tweet-ai-quvl.onrender.com/admin/requests");
         const requests = await response.json();
 
         const requestsList = document.getElementById("requestsList");
@@ -75,7 +75,7 @@ async function loadRequests() {
                 const approveButton = document.createElement("button");
                 approveButton.textContent = "Mark as Done";
                 approveButton.onclick = async () => {
-                    await fetch("http://localhost:3000/admin/update-status", {
+                    await fetch("https://tweet-ai-quvl.onrender.com/admin/update-status", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({ id: request.id, status: "Done" }),
