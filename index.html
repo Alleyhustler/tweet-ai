@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Request System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Admin Login Box (Fixed to the left side) -->
+    <div id="adminBox">
+        <h3>Admin Login</h3>
+        <input 
+            type="password" 
+            id="adminPassword" 
+            placeholder="Enter admin password..." 
+        />
+        <button id="adminLoginButton">Login as Admin</button>
+    </div>
+
+    <!-- Main Content Area -->
+    <div id="cli">
+        <pre>
+            <span class="cli-header">Tweet Request System - CLI</span>
+            <div id="cli-output">
+                <span class="cli-prompt">Welcome! Enter tweets below or view requests.</span>
+            </div>
+        </pre>
+        <textarea id="tweetContent" placeholder="Type your tweet here..." rows="3"></textarea>
+        <button id="submitTweet">Submit Tweet</button>
+
+        <hr class="cli-divider">
+
+        <div id="requestsContainer">
+            <pre class="cli-output">
+                <span class="cli-prompt">[Viewing Requests]</span>
+                <ul id="requestsList"></ul>
+            </pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
