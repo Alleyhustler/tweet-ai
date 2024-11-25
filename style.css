@@ -175,3 +175,22 @@ li button:hover {
         width: 90%;
     }
 }
+
+/* Styling for the CLI Header with logo */
+.cli-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ff00;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cli-header img.logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    margin-right: 10px; /* Space between the logo and the text */
+    border-radius: 50%; /* Optional: make the logo circular */
+}
