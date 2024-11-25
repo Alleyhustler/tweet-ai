@@ -194,3 +194,21 @@ li button:hover {
     margin-right: 10px; /* Space between the logo and the text */
     border-radius: 50%; /* Optional: make the logo circular */
 }
+
+#socialLinks {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.socialLink {
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+    color: #1DA1F2; /* Twitter blue */
+    text-decoration: none;
+}
+
+.socialLink:hover {
+    text-decoration: underline;
+}
+
